@@ -1,0 +1,33 @@
+{
+  "name": "aurora-metrics",
+  "version": "0.1.0",
+  "description": "Dashboard creates a unified view of your important metrics.",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexAichinger/Aurora-Metrics.git"
+  },
+  "keywords": [
+    "dashboard",
+    "aurora",
+    "metric",
+    "metrics",
+    "stocks",
+    "finance",
+    "organize",
+    "productivity"
+  ],
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexAichinger/Aurora-Metrics/issues"
+  },
+  "homepage": "https://github.com/AlexAichinger/Aurora-Metrics#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
+}
