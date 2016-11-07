@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var connect = require('gulp-connect');
+var browserSync = require('browser-sync');
 
 // Lint Task
 // gulp.task('lint', function() {
@@ -42,6 +43,17 @@ var connect = require('gulp-connect');
 // Serve
 gulp.task('webserver', function(){
   connect.server();
+});
+
+gulp.task('serve', function() {
+browserSync.init({
+server: {
+baseDir: "src/"
+}
+});
+
+gulp.watch("src/*.html")
+.on('change', browserSync.reload);
 });
 
 // Default Task
